@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Prayer-Now-Times/static/css/main.9160d884.css",
+    "main.js": "/Prayer-Now-Times/static/js/main.d18d3feb.js",
+    "static/media/bg (1).jpg": "/Prayer-Now-Times/static/media/bg (1).3a97572e19a67d389b4a.jpg",
+    "index.html": "/Prayer-Now-Times/index.html",
+    "main.9160d884.css.map": "/Prayer-Now-Times/static/css/main.9160d884.css.map",
+    "main.d18d3feb.js.map": "/Prayer-Now-Times/static/js/main.d18d3feb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9160d884.css",
+    "static/js/main.d18d3feb.js"
+  ]
+}
