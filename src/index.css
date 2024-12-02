@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", "sans-serif";
+
+}
+html{
+  direction: rtl;
+}
+section{
+  background: url(assets/bg\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section .container{
+  width: 750px;
+  background: #332a224e;
+  padding: 30px 25px;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border: 1px solid #d7d7d74e;
+}
+
+section .top_sec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d7d7d74e;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  
+}
+section .top_sec select{
+  width: 250px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+  background: #a54f3a;
+  padding: 2px 5px;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 15px;
+  -webkit-border-radius: 5px;
+}
+
+
+section .top_sec h3{
+  font-size: 26px;
+  color: #fff;
+  
+}
+section .top_sec .date{
+  width: 250px;
+}
+
+section .top_sec .date h4{
+  font-size: 26px;
+  color: #fff;
+  
+}
+section .prayer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  background: #c0583e75;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 5px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+  border: 1px solid #d7d7d74e;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+}
+
+section .prayer:hover{
+  background: ##d7d7d74e;
+  color: #000;
+  transform: scale(1.1);
+  transition: 1s ;
+  -webkit-transition: 1s ;
+  -moz-transition: 1s ;
+  -ms-transition: 1s ;
+  -o-transition: 1s ;
+  -webkit-animation:1s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+
+/* Media Queries for Responsiveness */
+
+
+@media (max-width: 768px) {
+  
+  section .top_sec select {
+    width: 250px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  section .top_sec{
+    padding: 10px;
+    flex-direction: row;
+    
+  } 
+  
+  
+  section .container {
+    width: 90%;
+    padding: 35px;
+    
+
+  }
+
+  section .top_sec select, section .top_sec .date {
+    padding: 8px;
+    
+  }
+
+  section .top_sec h3 {
+    font-size: 20px;
+    
+  }
+
+  section .prayer {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  section .container {
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  section .top_sec select, section .top_sec .date {
+    width: 100%;
+    padding: 8px;
+  }
+
+  section .top_sec select {
+    width: 250px;
+    padding:2px;
+    font-size: 18px;
+  }
+
+  section .top_sec{
+    padding: 5px;
+    flex-direction: column-reverse;
+  }
+
+  section .prayer {
+    font-size: 18px;
+    padding: 10px 5px;
+    
+  }
+}
