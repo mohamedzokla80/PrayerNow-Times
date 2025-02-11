@@ -24,18 +24,12 @@ function App() {
   useEffect(() => {
     const fetchPrayerTimes = async () => {
       try {
-        const today = new Date();
-        const formattedDate = `${today.getDate()}-${today.getMonth() + 1}-${today.getFullYear()}`;
         
         const response = await fetch(
-          `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=Egypt&date=${formattedDate}`
+          `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=Egypt&date=18-11-2024`
         );
-        
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-
         const data_Prayer = await response.json();
+        
 
         if (data_Prayer.data && data_Prayer.data.timings) {
           setPrayerTimes(data_Prayer.data.timings);
@@ -43,10 +37,9 @@ function App() {
         } else {
           console.error("لا توجد بيانات صلاة.");
         }
+        console.log(data_Prayer.data);
       } catch (error) {
         console.error("حدث خطأ في جلب البيانات: ", error);
-        setPrayerTimes({});
-        setDateTimes("");
       }
     };
 
